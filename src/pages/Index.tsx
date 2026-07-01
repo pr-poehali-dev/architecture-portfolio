@@ -2,9 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import Icon from '@/components/ui/icon';
 
 const IMG_LOGO = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/e8577793-dc8d-4df9-a314-b1cd8b4cc481.PNG';
-const IMG_RESIDENTIAL = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/89919f47-3e94-42ea-bd82-e8a5692eea25.jpg';
-const IMG_INTERIOR = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/253b008a-0a0d-47ee-b7af-fd46c57e9c71.jpg';
-const IMG_COMMERCIAL = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/597a7fcc-7e35-4ba8-adc9-7b6706aee493.jpg';
+const IMG_P1 = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/2f552a8b-6336-4463-917c-26da04ffab8b.png';
+const IMG_P2 = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/253b008a-0a0d-47ee-b7af-fd46c57e9c71.jpg';
+const IMG_P3 = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/d9ace74f-7f73-471f-a735-d20316861628.png';
+const IMG_P4 = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/fec7169c-f70a-40e3-a223-21a54975c114.png';
+const IMG_P5 = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/e6496813-30a4-4336-b966-43f47a9aab36.jpg';
+const IMG_P6 = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/2db450ae-7c25-424d-970c-129a6e06517b.png';
 
 type Category = 'Все' | 'Жильё' | 'Коммерция' | 'Интерьеры';
 
@@ -18,12 +21,12 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { id: 1, title: 'Дом у леса', location: 'Московская область', year: '2024', category: 'Жильё', image: IMG_RESIDENTIAL },
-  { id: 2, title: 'Тихая гостиная', location: 'Санкт-Петербург', year: '2023', category: 'Интерьеры', image: IMG_INTERIOR },
-  { id: 3, title: 'Бизнес-центр Ось', location: 'Москва', year: '2024', category: 'Коммерция', image: IMG_COMMERCIAL },
-  { id: 4, title: 'Резиденция Свет', location: 'Сочи', year: '2022', category: 'Жильё', image: IMG_RESIDENTIAL },
-  { id: 5, title: 'Пространство Норма', location: 'Казань', year: '2023', category: 'Интерьеры', image: IMG_INTERIOR },
-  { id: 6, title: 'Павильон Грань', location: 'Екатеринбург', year: '2024', category: 'Коммерция', image: IMG_COMMERCIAL },
+  { id: 1, title: 'Жилой комплекс Парковый', location: 'Московская область', year: '2024', category: 'Жильё', image: IMG_P1 },
+  { id: 2, title: 'Тихая гостиная', location: 'Санкт-Петербург', year: '2023', category: 'Интерьеры', image: IMG_P2 },
+  { id: 3, title: 'Загородный дом', location: 'Сочи', year: '2024', category: 'Жильё', image: IMG_P3 },
+  { id: 4, title: 'Коттедж у гор', location: 'Красная Поляна', year: '2022', category: 'Жильё', image: IMG_P4 },
+  { id: 5, title: 'Вилла Модерн', location: 'Казань', year: '2023', category: 'Жильё', image: IMG_P5 },
+  { id: 6, title: 'Ресторанный павильон', location: 'Екатеринбург', year: '2024', category: 'Коммерция', image: IMG_P6 },
 ];
 
 const services = [
