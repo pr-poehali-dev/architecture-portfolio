@@ -54,7 +54,7 @@ const navLinks = [
   { label: 'Услуги', id: 'services' },
   { label: 'Проекты', id: 'projects' },
   { label: 'Команда', id: 'team' },
-  { label: 'Блог', id: 'blog' },
+
   { label: 'Контакты', id: 'contacts' },
 ];
 
@@ -323,34 +323,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* BLOG */}
-      <section id="blog" className="max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-40">
-        <div className="grid md:grid-cols-12 gap-10 mb-16">
-          <div className="md:col-span-4 reveal">
-            <span className="text-accent text-sm tracking-mega uppercase">Блог</span>
-          </div>
-          <h2 className="md:col-span-8 reveal font-display text-4xl md:text-6xl font-light">Заметки бюро</h2>
-        </div>
-        <div>
-          {posts.map((post, i) => (
-            <div
-              key={post.title}
-              className="reveal group border-t border-border py-8 md:py-10 flex flex-col md:flex-row md:items-center gap-3 md:gap-10 cursor-pointer hover:px-4 transition-all duration-500"
-              style={{ animationDelay: `${i * 0.1}s` }}
-            >
-              <span className="text-sm text-muted-foreground w-28">{post.date}</span>
-              <span className="text-xs uppercase tracking-widest text-accent w-28">{post.tag}</span>
-              <h3 className="font-display text-2xl md:text-3xl font-light flex-1">{post.title}</h3>
-              <Icon
-                name="ArrowUpRight"
-                size={26}
-                className="text-muted-foreground group-hover:text-foreground transition-colors"
-              />
-            </div>
-          ))}
-          <div className="border-t border-border" />
-        </div>
-      </section>
+
 
       {/* CONTACTS / FOOTER */}
       <section id="contacts" className="bg-primary text-primary-foreground pt-28 md:pt-40 pb-12">
@@ -381,14 +354,14 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-10 text-sm text-primary-foreground/50">
-            <img src={IMG_LOGO} alt="ТАНДЕМ" className="h-10 w-10 object-contain opacity-80" />
-            <div className="flex gap-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-10 text-base text-primary-foreground/50">
+            <img src={IMG_LOGO} alt="ТАНДЕМ" className="h-20 w-20 object-contain opacity-90" />
+            <div className="flex gap-10 text-lg">
               <a href="#" className="hover:text-primary-foreground transition-colors">Behance</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Telegram</a>
             </div>
-            <span>© 2026 Бюро ТАНДЕМ</span>
+            <span className="text-lg">© 2026 Бюро ТАНДЕМ</span>
           </div>
         </div>
       </section>
