@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Icon from '@/components/ui/icon';
 
-const IMG_LOGO = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/fc11d851-86c3-42ce-bebd-7a714d130e8b.jpg';
+const IMG_LOGO = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/e8577793-dc8d-4df9-a314-b1cd8b4cc481.PNG';
 const IMG_RESIDENTIAL = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/89919f47-3e94-42ea-bd82-e8a5692eea25.jpg';
 const IMG_INTERIOR = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/253b008a-0a0d-47ee-b7af-fd46c57e9c71.jpg';
 const IMG_COMMERCIAL = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/597a7fcc-7e35-4ba8-adc9-7b6706aee493.jpg';
@@ -103,9 +103,8 @@ const Index = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
-          <button onClick={() => scrollTo('hero')} className="flex items-center gap-3">
-            <img src={IMG_LOGO} alt="ТАНДЕМ" className="w-9 h-9 object-contain rounded-sm" />
-            <span className="font-display text-2xl tracking-[0.25em] font-medium">ТАНДЕМ</span>
+          <button onClick={() => scrollTo('hero')} className="flex items-center gap-2">
+            <img src={IMG_LOGO} alt="ТАНДЕМ" className="h-11 w-11 object-contain" />
           </button>
           <nav className="hidden md:flex items-center gap-9 text-sm">
             {navLinks.map((l) => (
@@ -140,7 +139,6 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/30" />
         <div className="relative max-w-7xl mx-auto w-full px-6 md:px-10 pb-20 md:pb-28">
           <div className="flex items-center gap-4 mb-6 animate-fade-in">
-            <img src={IMG_LOGO} alt="ТАНДЕМ" className="w-8 h-8 object-contain rounded-sm opacity-80" />
             <p className="text-white/80 text-sm tracking-mega uppercase">
               Архитектурное бюро · с 2012
             </p>
@@ -375,10 +373,7 @@ const Index = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-10 text-sm text-primary-foreground/50">
-            <div className="flex items-center gap-3">
-              <img src={IMG_LOGO} alt="ТАНДЕМ" className="w-7 h-7 object-contain rounded-sm opacity-70 brightness-0 invert" />
-              <span className="font-display text-xl tracking-[0.25em] text-primary-foreground">ТАНДЕМ</span>
-            </div>
+            <img src={IMG_LOGO} alt="ТАНДЕМ" className="h-10 w-10 object-contain opacity-80" />
             <div className="flex gap-8">
               <a href="#" className="hover:text-primary-foreground transition-colors">Behance</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
