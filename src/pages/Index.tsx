@@ -103,7 +103,7 @@ const Index = () => {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
           <button onClick={() => scrollTo('hero')} className="font-display text-2xl tracking-[0.25em] font-medium">
-            ФОРМА
+            ТАНДЕМ
           </button>
           <nav className="hidden md:flex items-center gap-9 text-sm">
             {navLinks.map((l) => (
@@ -353,8 +353,8 @@ const Index = () => {
             <div className="md:col-span-6 flex flex-col justify-end gap-8 reveal" style={{ animationDelay: '0.15s' }}>
               <div>
                 <p className="text-primary-foreground/50 text-sm mb-1">Почта</p>
-                <a href="mailto:hello@forma.ru" className="font-display text-2xl md:text-3xl font-light hover:text-accent transition-colors">
-                  hello@forma.ru
+                <a href="mailto:hello@tandem.ru" className="font-display text-2xl md:text-3xl font-light hover:text-accent transition-colors">
+                  hello@tandem.ru
                 </a>
               </div>
               <div>
@@ -370,13 +370,13 @@ const Index = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-10 text-sm text-primary-foreground/50">
-            <span className="font-display text-xl tracking-[0.25em] text-primary-foreground">ФОРМА</span>
+            <span className="font-display text-xl tracking-[0.25em] text-primary-foreground">ТАНДЕМ</span>
             <div className="flex gap-8">
               <a href="#" className="hover:text-primary-foreground transition-colors">Behance</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Telegram</a>
             </div>
-            <span>© 2026 Бюро ФОРМА</span>
+            <span>© 2026 Бюро ТАНДЕМ</span>
           </div>
         </div>
       </section>
