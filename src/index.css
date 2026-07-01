@@ -4,33 +4,36 @@
 
 @layer base {
   :root {
-    --background: 0 0% 97%;
-    --foreground: 0 0% 22%;
+    /* Фирменная палитра ТАНДЕМ */
+    /* #E8E8E8 светло-серый фон, #606060 графит, #FFAA38 оранжевый, #A8C8DC голубой */
 
-    --card: 0 0% 97%;
-    --card-foreground: 0 0% 22%;
+    --background: 0 0% 91%;
+    --foreground: 0 0% 38%;
 
-    --popover: 0 0% 97%;
-    --popover-foreground: 0 0% 22%;
+    --card: 0 0% 91%;
+    --card-foreground: 0 0% 38%;
 
-    --primary: 0 0% 20%;
-    --primary-foreground: 0 0% 97%;
+    --popover: 0 0% 91%;
+    --popover-foreground: 0 0% 38%;
 
-    --secondary: 0 0% 91%;
-    --secondary-foreground: 0 0% 22%;
+    --primary: 0 0% 38%;
+    --primary-foreground: 0 0% 91%;
 
-    --muted: 0 0% 93%;
-    --muted-foreground: 0 0% 46%;
+    --secondary: 204 28% 83%;
+    --secondary-foreground: 0 0% 38%;
 
-    --accent: 33 96% 54%;
+    --muted: 204 28% 86%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 36 100% 61%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 86%;
-    --input: 0 0% 86%;
-    --ring: 33 96% 54%;
+    --border: 0 0% 82%;
+    --input: 0 0% 82%;
+    --ring: 36 100% 61%;
 
     --radius: 0rem;
 
