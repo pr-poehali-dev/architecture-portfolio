@@ -132,25 +132,25 @@ const Index = () => {
       {/* HERO */}
       <section id="hero" className="relative min-h-screen flex flex-col justify-end overflow-hidden">
         <img
-          src={IMG_RESIDENTIAL}
+          src="https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/e9e44a9d-cb48-4e5f-b663-9af0610dfe9e.png"
           alt="Архитектура"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
         <div className="relative max-w-7xl mx-auto w-full px-6 md:px-10 pb-20 md:pb-28">
-          <div className="flex items-center gap-4 mb-6 animate-fade-in">
+          <div className="flex items-center gap-4 mb-8 animate-fade-in">
             <p className="text-white/80 text-sm tracking-mega uppercase">
               Архитектурное бюро · с 2012
             </p>
           </div>
           <h1
-            className="font-display text-white text-[13vw] leading-[0.85] md:text-[8.5rem] font-light animate-fade-up"
+            className="font-display text-white text-[16vw] leading-[0.85] md:text-[11rem] font-light animate-fade-up"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
             Два взгляда —<br />одно решение
           </h1>
           <p
-            className="text-white/85 max-w-md mt-8 text-lg font-light animate-fade-up"
+            className="text-white/85 max-w-lg mt-10 text-xl font-light animate-fade-up"
             style={{ animationDelay: '0.3s', opacity: 0 }}
           >
             Мы работаем в паре — два архитектора, две точки зрения. Из этого диалога рождается архитектура, которую не придумать в одиночку.
