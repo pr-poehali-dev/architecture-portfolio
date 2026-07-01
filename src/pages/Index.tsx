@@ -34,7 +34,7 @@ const services = [
 ];
 
 const team = [
-  { name: 'Анна Ковалёва', role: 'Главный архитектор', photo: null },
+  { name: 'Анна Ковалёва', role: 'Главный архитектор', photo: 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/86879371-640a-4138-a880-d5ca98186973.jpg' },
   { name: 'Дмитрий Орлов', role: 'Партнёр, руководитель', photo: 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/573297df-bfe8-4338-b326-b1fdd4b1f73d.jpg' },
   { name: 'Мария Соколова', role: 'Дизайнер интерьеров', photo: 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/0a97a079-48e0-4a56-a72f-b5578f70d1bd.jpg' },
   { name: 'Игорь Белов', role: 'Ведущий инженер', photo: null },
