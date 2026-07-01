@@ -4,35 +4,35 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 20% 97%;
+    --foreground: 20 8% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 20% 97%;
+    --card-foreground: 20 8% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 20% 97%;
+    --popover-foreground: 20 8% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 20 8% 12%;
+    --primary-foreground: 40 20% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 12% 90%;
+    --secondary-foreground: 20 8% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 12% 92%;
+    --muted-foreground: 25 6% 42%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 18 45% 52%;
+    --accent-foreground: 40 20% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 12% 85%;
+    --input: 30 12% 85%;
+    --ring: 20 8% 12%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -96,6 +96,25 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+  }
+  .reveal.is-visible {
+    animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .img-zoom {
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .group:hover .img-zoom {
+    transform: scale(1.05);
+  }
+  .tracking-mega {
+    letter-spacing: 0.35em;
   }
 }
