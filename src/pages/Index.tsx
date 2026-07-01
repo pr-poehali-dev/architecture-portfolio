@@ -104,7 +104,7 @@ const Index = () => {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
           <button onClick={() => scrollTo('hero')} className="flex items-center gap-2">
-            <img src={IMG_LOGO} alt="ТАНДЕМ" className="h-11 w-11 object-contain" />
+            <img src={IMG_LOGO} alt="ТАНДЕМ" className="h-20 w-20 object-contain" />
           </button>
           <nav className="hidden md:flex items-center gap-9 text-sm">
             {navLinks.map((l) => (
