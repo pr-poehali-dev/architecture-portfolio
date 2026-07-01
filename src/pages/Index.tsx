@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Icon from '@/components/ui/icon';
 
+const IMG_LOGO = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/fc11d851-86c3-42ce-bebd-7a714d130e8b.jpg';
 const IMG_RESIDENTIAL = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/89919f47-3e94-42ea-bd82-e8a5692eea25.jpg';
 const IMG_INTERIOR = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/253b008a-0a0d-47ee-b7af-fd46c57e9c71.jpg';
 const IMG_COMMERCIAL = 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/files/597a7fcc-7e35-4ba8-adc9-7b6706aee493.jpg';
@@ -102,8 +103,9 @@ const Index = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
-          <button onClick={() => scrollTo('hero')} className="font-display text-2xl tracking-[0.25em] font-medium">
-            ТАНДЕМ
+          <button onClick={() => scrollTo('hero')} className="flex items-center gap-3">
+            <img src={IMG_LOGO} alt="ТАНДЕМ" className="w-9 h-9 object-contain rounded-sm" />
+            <span className="font-display text-2xl tracking-[0.25em] font-medium">ТАНДЕМ</span>
           </button>
           <nav className="hidden md:flex items-center gap-9 text-sm">
             {navLinks.map((l) => (
@@ -137,20 +139,23 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/30" />
         <div className="relative max-w-7xl mx-auto w-full px-6 md:px-10 pb-20 md:pb-28">
-          <p className="text-white/80 text-sm tracking-mega uppercase mb-6 animate-fade-in">
-            Архитектурное бюро · с 2009
-          </p>
+          <div className="flex items-center gap-4 mb-6 animate-fade-in">
+            <img src={IMG_LOGO} alt="ТАНДЕМ" className="w-8 h-8 object-contain rounded-sm opacity-80" />
+            <p className="text-white/80 text-sm tracking-mega uppercase">
+              Архитектурное бюро · с 2012
+            </p>
+          </div>
           <h1
-            className="font-display text-white text-[15vw] leading-[0.85] md:text-[9rem] font-light animate-fade-up"
+            className="font-display text-white text-[13vw] leading-[0.85] md:text-[8.5rem] font-light animate-fade-up"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
-            Пространство<br />тишины
+            Два взгляда —<br />одно решение
           </h1>
           <p
             className="text-white/85 max-w-md mt-8 text-lg font-light animate-fade-up"
             style={{ animationDelay: '0.3s', opacity: 0 }}
           >
-            Проектируем здания и интерьеры, в которых свет, материал и форма живут в согласии.
+            Мы работаем в паре — два архитектора, две точки зрения. Из этого диалога рождается архитектура, которую не придумать в одиночку.
           </p>
         </div>
         <button
@@ -169,24 +174,24 @@ const Index = () => {
           </div>
           <div className="md:col-span-8">
             <h2 className="reveal font-display text-4xl md:text-6xl font-light leading-[1.05] mb-10">
-              Мы верим, что хорошая архитектура остаётся незаметной, но меняет ощущение жизни.
+              Лучшие решения рождаются в диалоге — двух архитекторов, двух характеров, одного бюро.
             </h2>
             <div className="grid sm:grid-cols-2 gap-8 text-muted-foreground reveal" style={{ animationDelay: '0.15s' }}>
               <p>
-                За пятнадцать лет мы спроектировали более сотни объектов — от частных домов до
-                общественных пространств. Каждый проект начинается с вопроса «как здесь будет
-                жить человек».
+                ТАНДЕМ основан двумя партнёрами — Анной Ковалёвой и Дмитрием Орловым. Каждый
+                проект проходит через оба взгляда: один ищет поэзию пространства, другой —
+                конструктивную точность.
               </p>
               <p>
-                Наш метод — сдержанность. Мы убираем лишнее, пока не останется только суть:
-                пропорция, свет, честный материал и точная деталь.
+                Из этого напряжения рождается архитектура без компромиссов: выразительная и
+                при этом безупречно выполненная. Мы убеждены — именно диалог делает здания живыми.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-6 mt-16 reveal" style={{ animationDelay: '0.3s' }}>
               {[
-                ['120+', 'Проектов'],
-                ['15', 'Лет опыта'],
-                ['9', 'Наград'],
+                ['85+', 'Проектов'],
+                ['12', 'Лет опыта'],
+                ['7', 'Наград'],
               ].map(([n, l]) => (
                 <div key={l} className="border-t border-border pt-5">
                   <div className="font-display text-5xl md:text-6xl font-light">{n}</div>
@@ -370,7 +375,10 @@ const Index = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-10 text-sm text-primary-foreground/50">
-            <span className="font-display text-xl tracking-[0.25em] text-primary-foreground">ТАНДЕМ</span>
+            <div className="flex items-center gap-3">
+              <img src={IMG_LOGO} alt="ТАНДЕМ" className="w-7 h-7 object-contain rounded-sm opacity-70 brightness-0 invert" />
+              <span className="font-display text-xl tracking-[0.25em] text-primary-foreground">ТАНДЕМ</span>
+            </div>
             <div className="flex gap-8">
               <a href="#" className="hover:text-primary-foreground transition-colors">Behance</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Instagram</a>
