@@ -34,10 +34,10 @@ const services = [
 ];
 
 const team = [
-  { name: 'Анна Ковалёва', role: 'Главный архитектор' },
-  { name: 'Дмитрий Орлов', role: 'Партнёр, руководитель' },
-  { name: 'Мария Соколова', role: 'Дизайнер интерьеров' },
-  { name: 'Игорь Белов', role: 'Ведущий инженер' },
+  { name: 'Анна Ковалёва', role: 'Главный архитектор', photo: null },
+  { name: 'Дмитрий Орлов', role: 'Партнёр, руководитель', photo: null },
+  { name: 'Мария Соколова', role: 'Дизайнер интерьеров', photo: 'https://cdn.poehali.dev/projects/6455e36c-fb7d-4e9f-aea7-d78539ce348c/bucket/0a97a079-48e0-4a56-a72f-b5578f70d1bd.jpg' },
+  { name: 'Игорь Белов', role: 'Ведущий инженер', photo: null },
 ];
 
 const posts = [
@@ -301,10 +301,16 @@ const Index = () => {
                 className="reveal bg-secondary p-8 md:p-10 group hover:bg-background transition-colors duration-500"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="aspect-square bg-muted mb-6 flex items-center justify-center">
-                  <span className="font-display text-6xl text-muted-foreground/40">
-                    {m.name.split(' ').map((w) => w[0]).join('')}
-                  </span>
+                <div className="aspect-square bg-muted mb-6 overflow-hidden">
+                  {m.photo ? (
+                    <img src={m.photo} alt={m.name} className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="font-display text-6xl text-muted-foreground/40">
+                        {m.name.split(' ').map((w) => w[0]).join('')}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <h3 className="font-display text-2xl font-light">{m.name}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{m.role}</p>
